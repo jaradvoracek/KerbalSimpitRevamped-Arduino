@@ -298,7 +298,7 @@ void setup() {
     // Convert them in KerbalSimpit range
     int16_t pitch = map(reading_pitch, 0, 1023, INT16_MIN, INT16_MAX);
     int16_t roll = map(reading_roll, 0, 1023, INT16_MIN, INT16_MAX);
-    int16_t yaw = map(reading_roll, 0, 1023, INT16_MIN, INT16_MAX);
+    int16_t yaw = map(reading_yaw, 0, 1023, INT16_MIN, INT16_MAX);
     // Put those values in the message one at a time, e.g. if you only want to set one or two axis
     rot_msg.setPitch(pitch);
     rot_msg.setRoll(roll);
